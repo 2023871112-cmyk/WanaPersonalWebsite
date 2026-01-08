@@ -272,27 +272,36 @@ th {
 </div>
 
 <!-- Template Images -->
-        <div class="images/ayamgepuk.jpg">
+        <div class="fav-images">
+            <img src="images/ayamgepuk.jpg" class="fav-img">
                 Image<br>Template 1
             </div>
-            <div class="images/fishnchips.jpg">
+            <div class="fav-img">
+                <img src="images/fishnchips.jpg" class="fav-img">
                 Image<br>Template 2
             </div>
         </div>
 
-<!-- Map -->
-<h2 style="text-align:center;">Place of Birth 🤍</h2>
-<div style="text-align:center;">
-<img src="images/Johor-Districts-Map.png" usemap="#image-map" width="350">
-</div>
-
 <map name="image-map">
-<area target="_blank" href="https://jknjohor.moh.gov.my/hsajb/" coords="927,1542,1234,1275" shape="rect">
+    <area target="_blank"
+          alt="Hospital Sultanah Aminah Johor Bahru" title="Hospital Sultanah Aminah Johor Bahru" href="https://jknjohor.moh.gov.my/hsajb/" coords="927,1542,1234,1275"
+          shape="rect">
+
+    <area target="_blank"
+          alt="Wikipedia" title="Wikipedia" href="https://ms.wikipedia.org/wiki/Hospital_Sultanah_Aminah" coords="1379,1297,283"
+          shape="circle">
 </map>
 
+<!-- Image map resizer (WAJIB) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/image-map-resizer/1.0.10/js/imageMapResizer.min.js"></script>
+<script>
+    imageMapResize();
+</script>
+
 <div class="footer">
-&copy; 2026 | Syazwana
+    &copy; 2026 | Syazwana | This page is a small introduction about who I am and my background.
 </div>
+
 
 </body>
 </html>
