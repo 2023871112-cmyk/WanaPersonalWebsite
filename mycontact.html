@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #fde4ef, #ffffff);
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Marquee Header */
+        marquee {
+            background-color:#fff7b4;
+            padding: 15px 0;
+        }
+        header {
+            background-image: url("headerhomepage.jpg");
+            background-size: cover;
+            background-position: center;
+            color: rgb(20, 18, 18);
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            border: 10px dashed rgba(213, 57, 151, 0.74);
+            background: #fff;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 32px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #880e4f;
+            margin-top: 20px;
+        }
+
+        /* Contact grid */
+        .contact-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+
+        .contact-card {
+            background-color: #fff;
+            width: 140px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            text-align: center;
+            padding: 15px 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .contact-card img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+
+        .contact-title {
+            font-weight: bold;
+            color: #6a0572;
+            margin-bottom: 5px;
+        }
+
+        .contact-username {
+            font-size: 14px;
+            color: #ff69b4;
+        }
+
+        @media screen and (max-width: 600px) {
+            .contact-card {
+                width: 120px;
+                padding: 10px;
+            }
+        }
+
+        .nav-button {
+    display: inline-block;
+    background-color: #ffcdef;
+    color: #6a0572;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 2px solid #6a0572;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MY CONTACT</h1>
+    </header>
+
+ <!-- Marquee from your coding -->
+    <marquee loop="10">
+        <h1>🎀💻👍✨ Welcome to my magical web space! Explore, have fun, and sprinkle some love by clicking the buttons below 
+            [ follow, like, share, and leave a sweet comment! 💖📤]</h1>
+    </marquee>
+
+<nav>
+<!-- Simple Button Navigation -->
+<div style="text-align: center; margin: 20px 0;">
+
+    <a href="homepage.html" class="nav-button">Back To Home Page</a>
+    <a href="gallery.html" class="nav-button">Next page</a>
+
+</div>
+</nav>
+
+    <h2> 🎉 Reach Me via My Social Platforms 🎉</h2>
+
+    <div class="contact-grid">
+
+        <!-- Email -->
+        <div class="contact-card">
+            <a href="mailto:syazwana6405@gmail.com?subject=Hello&body=Hi!" title="Email Me">
+                <img src="email.png" alt="Email">
+                <div class="contact-title">Email</div>
+                <div class="contact-username">syazwana6405
+                    @gmail.com</div>
+            </a>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="contact-card">
+            <a href="https://wa.me/60183562135" target="_blank" title="WhatsApp Me">
+                <img src="whatsapp.avif" alt="WhatsApp">
+                <div class="contact-title">WhatsApp</div>
+                <div class="contact-username">+60183562135</div>
+            </a>
+        </div>
+
+        <!-- TikTok -->
+        <div class="contact-card">
+            <a href="https://www.tiktok.com/@miniszwana?_r=1&_t=ZS-92eseBa6mdV" target="_blank" title="TikTok">
+                <img src="tiktok.png" alt="TikTok">
+                <div class="contact-title">TikTok</div>
+                <div class="contact-username">@miniszwana</div>
+            </a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="contact-card">
+            <a href="https://www.instagram.com/szwaanaa?igsh=Z2psNWE1b2x6YWJw&utm_source=qr" target="_blank" title="Instagram">
+                <img src="instagram.png" alt="Instagram">
+                <div class="contact-title">Instagram</div>
+                <div class="contact-username">@szwaanaa</div>
+            </a>
+        </div>
+
+        <!-- Facebook -->
+        <div class="contact-card">
+            <a href="https://www.facebook.com/profile.php?id=100091542996219" target="_blank" title="Facebook">
+                <img src="facebook.png" alt="Facebook">
+                <div class="contact-title">Facebook</div>
+                <div class="contact-username">Nur Amirah</div>
+            </a>
+        </div>
+
+<div class="footer" style="text-align: center; margin: 30px 0; color: #777; font-size: 14px;">
+    &copy;  2026 | Syazwana | Thank you for visiting my personal website. Feel free to get in touch!
+
+</div>
+
+
+</body>
+</html>

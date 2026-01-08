@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Hobbies</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #fde4ef, #ffffff);
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Header with animation */
+        header {
+            background-image: url("headerhomepage.jpg");
+            background-size: cover;
+            text-align: center;
+            padding: 40px 0;
+            animation: fadeInHeader 2s ease-in-out;
+        }
+
+        header h1 {
+            background: #fff;
+            display: inline-block;
+            padding: 15px 30px;
+            border: 8px dashed #d96fa1;
+            font-size: 36px;
+            color: #880e4f;
+            transform: translateY(-50px);
+            animation: dropDown 1.5s forwards;
+        }
+
+        @keyframes dropDown {
+            to { transform: translateY(0); }
+        }
+
+        @keyframes fadeInHeader {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .nav-buttons {
+            text-align:center;
+            margin: 20px 0;
+        }
+
+        .nav-button {
+            display: inline-block;
+            background-color: #ffcdef;
+            color: #6a0572;
+            font-weight: bold;
+            padding: 10px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            border: 2px solid #6a0572;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #e3dc95;
+            transform: scale(1.05) rotate(-2deg);
+        }
+
+        .hobby-section {
+            width: 80%;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            padding: 25px;
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeUp 1s forwards;
+        }
+
+        .hobby-section:nth-child(2) { animation-delay: 0.3s; }
+        .hobby-section:nth-child(3) { animation-delay: 0.6s; }
+        .hobby-section:nth-child(4) { animation-delay: 0.9s; }
+        .hobby-section:nth-child(5) { animation-delay: 1.2s; }
+
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hobby-section h2 {
+            text-align: center;
+            color: #6a0572;
+            margin-bottom: 15px;
+            font-size: 28px;
+            animation: colorPulse 2s infinite alternate;
+        }
+
+        @keyframes colorPulse {
+            0% { color: #6a0572; }
+            100% { color: #ff69b4; }
+        }
+
+        .hobby-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .hobby-images img {
+            width: 250px;   /* saiz kotak gambar baru */
+            height: 300px;  /* saiz kotak gambar baru */
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid #ffcdef;
+            transition: transform 0.5s, box-shadow 0.5s;
+            cursor: pointer;
+        }
+
+        .hobby-images img:hover {
+            transform: scale(1.1) rotate(3deg);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+        }
+
+        .hobby-desc {
+            text-align: center;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin: 30px 0;
+            color: #777;
+            font-size: 14px;
+        }
+
+        /* Back to Top Button */
+        #topBtn {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #ffcdef;
+            color: #6a0572;
+            border: none;
+            padding: 14px 20px;
+            border-radius: 18px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        #topBtn:hover {
+            background: #ffbde0;
+            transform: scale(1.1);
+        }
+
+        /* Background music player */
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255, 192, 223, 0.8);
+            padding: 10px 15px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        .music-player audio {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>MY HOBBIES</h1>
+</header>
+
+<div class="nav-buttons">
+    <a href="homepage.html" class="nav-button">Back to Home</a>
+    <a href="myeducation.html" class="nav-button">Next Page</a>
+</div>
+
+<!-- HOBBY 1 -->
+<div class="hobby-section">
+    <h2>🌿 Hiking</h2>
+    <div class="hobby-images">
+        <img src="gambarhiking1.jpg">
+        <img src="gambarhiking2.jpg">
+        <img src="gambarhiking3.jpg">
+    </div>
+    <p class="hobby-desc">
+        Hiking allows me to connect with nature, clear my mind, and enjoy peaceful moments
+        while appreciating beautiful scenery and fresh air.
+    </p>
+</div>
+
+<!-- HOBBY 2 -->
+<div class="hobby-section">
+    <h2>💃 Dancing</h2>
+    <div class="hobby-images">
+        <img src="gambardance1.jpg">
+        <img src="gambardance2.jpg">
+        <img src="gambardance3.jpg">
+    </div>
+    <p class="hobby-desc">
+        Dancing is my way of expressing emotions and boosting my confidence.
+        It brings joy, energy, and positivity into my daily life.
+    </p>
+</div>
+
+<!-- HOBBY 3 -->
+<div class="hobby-section">
+    <h2>🎬 Watching Movies at Cinema </h2>
+    <div class="hobby-images">
+        <img src="gambarmovie1.jpg">
+        <img src="gambarmovie2.jpg">
+        <img src="gambarmovie3.jpg">
+    </div>
+    <p class="hobby-desc">
+        Watching movies helps me relax and unwind.
+        I enjoy exploring different genres and learning new perspectives through stories.
+    </p>
+</div>
+
+<!-- HOBBY 4 -->
+<div class="hobby-section">
+    <h2>✈️ Reading Novel </h2>
+    <div class="hobby-images">
+        <img src="gambarnovel1.jpg">
+        <img src="gambarnovel2.jpg">
+        <img src="gambarnovel3.jpg">
+    </div>
+    <p class="hobby-desc">
+        Traveling allows me to explore new places, meet different people, and experience diverse cultures.
+        It gives me unforgettable memories, broadens my perspective, and refreshes my mind.
+    </p>
+</div>
+
+<!-- HOBBY 5 -->
+<div class="hobby-section">
+    <h2>🍴 Food Hunting</h2>
+    <div class="hobby-images">
+        <img src="gambarfood1.jpg">
+        <img src="gambarfood2.jpg">
+        <img src="gambarfood3.jpg">
+    </div>
+    <p class="hobby-desc">
+        Food hunting is my passion for discovering delicious dishes and unique flavors.
+        I love exploring local delicacies, trying new restaurants, and sharing food experiences with friends and family.
+    </p>
+</div>
+
+<!-- Back to Top Button -->
+<button onclick="topFunction()" id="topBtn">⬆️ Back to Top</button>
+
+<!-- Music Player -->
+<div class="music-player">
+    <div class="audio-box">
+        <div class="audio-title">🎵 Our Memory Song</div>
+        <div class="audio-title">Taylor Swift | Cruel Summer</div>
+        <audio controls autoplay loop>
+            <source src="lagutaylor.flac" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    &copy; 2026 | Syazwana | This section shares a little about the hobbies I enjoy in my free time.
+</footer>
+
+<script>
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        document.getElementById("topBtn").style.display = "block";
+    } else {
+        document.getElementById("topBtn").style.display = "none";
+    }
+};
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+</html>
